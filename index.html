@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  
+<div class="container">
+  <div class ='debut'>
+  <h1 class="titre">Hangman</h1>
+  <div class="score">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span>
+  </div>
+</div>
+
+  <div class="box_img">
+    <img id='hangmanPic' src="assets/img/heart.png" alt="">
+  </div>
+
+  <div class ='words'>
+    <p class="get">Ready</p>
+    <p></p>
+    <p id="wordSpotlight">mot à trouver</p>
+  </div>
+
+  <div id="keyboard">
+     buttons généré
+  </div>
+
+  <div class="gameover">
+    <button class="reset" onClick="reset()">Reset</button>
+  </div> 
+</div>
+</div>
+<script src="/assets/js/js.js"></script>
+</body>
+</html>

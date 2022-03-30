@@ -1,0 +1,29 @@
+body {
+  background: url(/assets/img/bacground-mobile.png);
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  margin: 20px;
+}
+
+.debut {
+  padding-top: 0px;
+}
+
+.words .get {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+#keyboard {
+  padding-top: 25px;
+}
+
+.gameover {
+  padding-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
