@@ -3,11 +3,11 @@
 ![photoshop](https://img.shields.io/badge/photoshop-fb0505.svg?style=for-the-badge&logo=adobe) 
 # Hangman
 
-Create a little Hangman game 
 
 # Objective
+Create a little game with :
 
-Use * HTML & Sass
+    * HTML & Sass
     * Javacsript
     
 # Design 
