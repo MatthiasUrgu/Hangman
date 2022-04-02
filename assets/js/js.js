@@ -39,6 +39,9 @@ function randomWord() {
   answer = words[Math.floor(Math.random() * words.length)];
 }
 
+
+//function pour créer les boutons auquels on attribue une class & id ------------------
+
 function buttonLettre() {
   let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
     `
@@ -54,6 +57,7 @@ function buttonLettre() {
   document.getElementById('keyboard').innerHTML = buttonsHTML;
 }
 
+//function pour masquer si la lettre n'est pas dans le mot
 function handleGuess(chosenLetter) {
   guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
   document.getElementById(chosenLetter).setAttribute('disabled', true);
@@ -65,11 +69,11 @@ function handleGuess(chosenLetter) {
     mistakes++;
     erreur();
     checkIfGameLost();
-    updateHangmanPicture();
+    UpdateHangmanImg();
   }
 }
 
-function updateHangmanPicture() {
+function UpdateHangmanImg() {
   document.getElementById('hangmanPic').src = '/assets/img/werewolf'+ mistakes + '.png';
 }
 
