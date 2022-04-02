@@ -70,7 +70,7 @@ function handleGuess(chosenLetter) {
 }
 
 function updateHangmanPicture() {
-  document.getElementById('hangmanPic').src = '/assets/img/heart'+ mistakes + '.png';
+  document.getElementById('hangmanPic').src = '/assets/img/werewolf'+ mistakes + '.png';
 }
 
 function win() {
@@ -99,7 +99,7 @@ function erreur() {
 function reset() {
   mistakes = 0;
   guessed = [];
-  document.getElementById('hangmanPic').src = 'assets/img/heart.png';
+  document.getElementById('hangmanPic').src = 'assets/img/Werewolf.png';
 
   randomWord();
   WordsFind();

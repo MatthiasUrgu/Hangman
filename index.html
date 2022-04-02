@@ -9,33 +9,40 @@
   <title>Document</title>
 </head>
 <body>
-  
-<div class="container">
-  <div class ='debut'>
-  <h1 class="titre">Hangman</h1>
-  <div class="score">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span>
-  </div>
-</div>
+  <div class="container">
+   <div class="background">
+        <div class ='debut'>
 
-  <div class="box_img">
-    <img id='hangmanPic' src="assets/img/heart.png" alt="">
-  </div>
+        <h1 class="titre">Hangman</h1>
+    </div>
 
-  <div class ='words'>
-    <p class="get">Ready</p>
-    <p></p>
-    <p id="wordSpotlight">mot à trouver</p>
-  </div>
+    <div class="grid">
+        <div class="score">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span>
+        </div>
 
-  <div id="keyboard">
-     buttons généré
+        <div class="box_img">
+          <img id='hangmanPic' src="assets/img/Werewolf.png" alt="loup">
+        </div>
+    </div>
+    
   </div>
+    <div class="backgroundBottom">
+      <div class ='words'>
+        
+        <p></p>
+        <p id="wordSpotlight">mot à trouver</p>
+      </div>
 
-  <div class="gameover">
-    <button class="reset" onClick="reset()">Reset</button>
-  </div> 
-</div>
-</div>
+      <div id="keyboard">
+        buttons généré
+      </div>
+
+      <div class="gameover">
+        <button class="reset" onClick="reset()">Reset</button>
+      </div> 
+    </div>
+    </div>
+
 <script src="/assets/js/js.js"></script>
 </body>
 </html>

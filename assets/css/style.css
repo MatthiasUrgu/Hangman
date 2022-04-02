@@ -1,22 +1,78 @@
+@font-face {
+  font-family: 'Finger_Paint';
+  src: url(/assets/fonts/Finger_Paint/FingerPaint-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Kolker_Brush';
+  src: url(/assets/fonts/Kolker_Brush/KolkerBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Mountains_of_Christmas';
+  src: url(/assets/fonts/Mountains_of_Christmas/MountainsofChristmas-Bold.woff);
+}
+
 body {
-  background: url(/assets/img/bacground-mobile.png);
-  background-repeat: no-repeat;
   color: white;
   margin: 0;
   text-align: center;
 }
 
+.background {
+  background: url(/assets/img/background.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.backgroundBottom {
+  position: relative;
+  top: -50px;
+  background: url(/assets/img/background-bottom.png);
+  background-size: cover;
+  z-index: 1;
+}
+
 .container {
-  margin: 20px;
+  margin: 10px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid .box_img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  padding-bottom: 14px;
+  padding-left: 70px;
+}
+
+.grid .score {
+  padding-top: 75px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-family: 'Kolker_Brush';
+  font-size: 30px;
 }
 
 .debut {
   padding-top: 0px;
 }
 
-.words .get {
-  font-size: 25px;
-  letter-spacing: 2px;
+.debut .titre {
+  font-family: 'Mountains_of_Christmas';
+}
+
+.words {
+  padding-top: 5px;
+  font-family: 'Finger_Paint';
+  font-size: 15px;
 }
 
 #keyboard {
@@ -25,5 +81,6 @@ body {
 
 .gameover {
   padding-top: 20px;
+  padding-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */
